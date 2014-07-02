@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>Hammer Time</title>
+    <meta charset="utf-8">
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+    
+    <script src="bower_components/platform/platform.js"></script>
+    <script src="app.js"></script>
+ 
+    <style>
+      
+      /*SELECTAHS!!!!!!!!!!!!!!!*/
+      body {
+        text-align: center;
+        font-family: "Lato", sans-serif;
+        color: black;
+        background: white;
+      }
+ 
+      header {
+        height:200px;
+        width:1000px;
+      }
+ 
+      article {
+        height:500px;
+        width:500px;
+        position:absolute;
+        left:250px;
+        background-image:url('http://i60.tinypic.com/2njwoj6.jpg');
+      }
+ 
+      h1 {
+        font-size: 200%;
+        color: black;
+        padding-top:50px;
+      }
+ 
+      ul {
+        list-style-type: none;
+        line-height:100px;
+        padding-top:25px;
+      }
+ 
+      a:link {
+        text-decoration: none;
+        color: black;
+      }
+ 
+      a:visited {
+        color: black;
+      }
+ 
+      /*Classes*********************/
+      .bigbox {
+        margin: 0 auto;
+        width:1000px;
+      }
+ 
+      .middle {
+        position:relative;
+        height:500px;
+      }
+ 
+      .left {
+        width:250px;
+        height:500px;
+        text-align: left;
+        position:absolute; 
+      }
+ 
+      .right {
+        width:250px;
+        height:500px;
+        text-align: right;
+        position:absolute;
+        left:750px;
+ 
+      }
+ 
+      .bottom {
+        height:200px;
+        width:1000px;
+      }
+
+      .hammer {
+        height:175px;
+        padding:100px;
+      }
+
+      .image {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    @-ms-keyframes spin { from { -ms-transform: rotate(0deg); } to { -ms-transform: rotate(360deg); }}
+    @-moz-keyframes spin { from { -moz-transform: rotate(0deg); } to { -moz-transform: rotate(360deg); }}
+    @-webkit-keyframes spin { from { -webkit-transform: rotate(0deg); } to { -webkit-transform: rotate(360deg); }}
+    @keyframes spin { from { transform:rotate(0deg); } to { transform:rotate(360deg); }}
+    }
+
+    </style>
+ 
+  </head>
+  <body>
+    <section class="bigbox">
+    	<header>
+        <h1>Acceleration of Time</h1>
+      </header>
+      <section class="middle">
+      <div class="left">
+        <!-- Lijst met namen -->
+        <ul>
+          <li><a target="_blank" href="http://en.wikipedia.org/wiki/Paul_Virilio">Paul Virillo</a></li>
+          <li><a target="_blank" href="http://en.wikipedia.org/wiki/Manuel_Castells">Manuel Castells</a></li>
+          <li><a target="_blank" href="http://www.questia.com/library/102305551/the-internet-an-ethnographic-approach">Miller and Slater</a></li>
+          <li><a target="_blank" href="http://en.wikipedia.org/wiki/David_Berry_(inventor)">David Berry</a></li>
+        </ul>
+      </div>
+        <article>
+         <!-- plaatje van de klok-->
+          <img class='hammer' src="http://i59.tinypic.com/2071i11.gif" alt="Hail Satan"> 
+        </article>
+      <div class="right">
+        <!-- Lijst met namen -->
+        <ul>
+          <li><a target="_blank" href="http://www.manovich.net/">Lev Manovich</a><li>
+          <li><a target="_blank" href="https://en.wikipedia.org/wiki/Robert_Hanssen">Robert Hassan</a><li>
+          <li><a target="_blank" href="https://nl.wikipedia.org/wiki/Peter_Sloterdijk">Peter Sloterdijk</a><li>
+          <li><a target="_blank" href="http://oasisapps.curtin.edu.au/staff/profile/view/Susan.Leong">Susan Leong</a></li>
+        </ul>
+      </div>
+      </section>
+      <section class="bottom">
+        <h1>Through Technology</h1>
+      </section>
+      <footer>
+        <p>made by the Awesome Squad!</p>
+      </footer>
+    </section>
+  </body>
+</html>

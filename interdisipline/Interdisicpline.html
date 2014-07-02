@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>Hammer Time</title>
+    <meta charset="utf-8">
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+    
+    <script src="bower_components/platform/platform.js"></script>
+    <script src="app.js"></script>
+ 
+    <style>
+      
+      /*SELECTAHS!!!!!!!!!!!!!!!*/
+      body {
+        text-align: center;
+        font-family: "Lato", sans-serif;
+        color: black;
+        background: white;
+      }
+ 
+      header {
+        height:150px;
+        width:1000px;
+
+      }
+ 
+      article {
+        height:750px;
+        width:750px;
+        position:absolute;
+        left:125px;
+
+      }
+ 
+      h1 {
+        font-size: 400%;
+        color: black;
+        padding-top:0px;
+        text-decoration: underline;
+      }
+ 
+      ul {
+        list-style-type: none;
+        line-height:100px;
+        padding-top:25px;
+      }
+ 
+      a:link {
+        text-decoration: none;
+        color: black;
+      }
+ 
+      a:visited {
+        color: black;
+      }
+ 
+      /*Classes*********************/
+      .bigbox {
+        margin: 0 auto;
+        width:1000px;
+      }
+
+      .topbox {
+        height: 0px;
+        width: 1000px;
+
+      }
+ 
+      .middle {
+        position:relative;
+        height:750px;
+      }
+ 
+      .left {
+        width:125px;
+        height:750px;
+        text-align: left;
+        position:absolute;
+
+      }
+ 
+      .right {
+        width:125px;
+        height:750px;
+        text-align: right;
+        position:absolute;
+        left:875px;
+
+ 
+      }
+ 
+      .bottom {
+        height:150px;
+        width:1000px;
+
+      }
+
+      .humanities {
+        position:absolute;
+        top:25px;
+        left:25px;
+        height:700px;
+      }
+
+      .barbedwire {
+        height:400px;
+        position:absolute;
+        top:175px;
+        left:175px;
+      }
+
+      .datacircle {
+        position:absolute;
+        top:250px;
+        left:250px;
+      }
+
+
+      .hammeranimate{
+        -webkit-transition-duration: 4s;
+        -moz-transition-duration: 4s;
+        -o-transition-duration: 4s;
+        transition-duration: 4s;
+         
+        -webkit-transition-property: -webkit-transform;
+        -moz-transition-property: -moz-transform;
+        -o-transition-property: -o-transform;
+        transition-property: transform;
+
+         overflow:hidden;
+        }  
+       
+      .hammeranimate:hover  
+      {  
+        -webkit-transform:rotate(-360deg);
+        -moz-transform:rotate(-360deg);
+        -o-transform:rotate(-360deg);
+      }  
+
+      .circle { 
+        border-radius: 50%; 
+        width: 200px; 
+        height: 200px;  
+      }
+
+    </style>
+ 
+  </head>
+  <body>
+    <section class="bigbox">
+    	<header>
+        <h1>Interdisciplinairity</h1>
+      </header>
+      <div class="topbox">
+      </div>
+      <section class="middle">
+      <div class="left">
+        <!-- Lijst met namen -->
+        
+      </div>
+        <article>
+         <!-- plaatje van de klok-->
+          <img class='humanities hammeranimate' src="http://i57.tinypic.com/etcq48.png">
+          <img class='barbedwire hammeranimate' src="http://i60.tinypic.com/o6i2qv.png"> 
+          <img class='datacircle hammeranimate' src="http://i59.tinypic.com/sdl4y1.png"> 
+        </article>
+      <div class="right">
+        <p class="circle"></p>
+        
+      </div>
+      </section>
+      <section class="bottom">
+      </section>
+      <footer>
+        <p>made by the Awesome Squad!</p>
+      </footer>
+    </section>
+  </body>
+</html>

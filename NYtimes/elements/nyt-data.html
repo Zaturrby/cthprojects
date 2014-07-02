@@ -1,0 +1,38 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/polymer-ajax/polymer-ajax.html">
+
+<polymer-element name="nyt-data">
+	<template>
+	<polymer-ajax url="../json/articlesearch.json" auto handleAs="json" response="{{results}}"></polymer-ajax>
+		
+	<template repeat="{{ doc in results.response.docs }}">
+		<template repeat="{{ keyword in doc.keywords }}" >
+			<div>
+			<p>Keyword:</p>	
+			<p> {{ keyword.value }} </p>
+			</div>
+		</template>
+		<p>Wordcount: </p>
+		<p>{{ doc.word_count }}</p>
+
+		<template repeat="{{ media in doc.multimedia }}" >
+			<div>
+			<p>Image:</p>	
+			<img src="http://graphics8.nytimes.com/{{ media.url }}"> </img>
+			</div>
+		</template>
+		<p> ------------------------------------------ </p>
+	</template>
+
+		<p> {{ results.response.word_count }} </p>
+
+	</template>
+	<script>
+		Polymer('nyt-data', {
+			results: "",
+			resultsChanged: function() {
+			console.log(this.results);
+			}
+		});
+	</script>
+</polymer-element>
